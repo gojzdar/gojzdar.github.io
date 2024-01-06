@@ -113,6 +113,7 @@ export class Question {
 		// print explanation
 		if(this.explanation) {
 			(questionBox.lastChild as HTMLDivElement) .innerHTML = this.explanation;
+			console.log(this.explanation);
 		}
 		return [questionScore, this.maxWorth];
 	};
