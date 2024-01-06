@@ -12,3 +12,63 @@
   width: 540px;
   height: 540px;
 }
+
+body {
+	background-color: black;
+	color: white;
+	font-family:Arial, Helvetica, sans-serif;
+	/* padding: 10px, 0; */
+}
+
+.QuestionBox img {
+	max-width: 50%;
+	height: auto;
+}
+
+.QuestionBox {
+	margin: 1em 0;
+}
+
+.Question {
+	display: inline-block;
+	font-size: 1.35em;
+	font-weight: bold;
+	width: 100%;
+}
+
+.QuestionNumber {
+	
+	display: inline-block;
+	margin-right: 1ch;
+	font-size: 1.35em;
+	font-weight: bold;
+}
+
+label {
+	width: 100%;
+	display: block;
+
+}
+
+div.QuestionBox.Unanswered {
+	background-color: #111;
+}
+div.QuestionBox.Correct {
+	background-color: darkgreen;
+}
+div.QuestionBox.Wrong {
+	background-color: darkred;
+}
+
+/* div.QuestionBox label.Unanswered {
+} */
+div.QuestionBox label.Correct {
+	background-color: green;
+}
+div.QuestionBox label.Wrong {
+	background-color: red;
+}
+
+div.QuestionBox label:hover {
+	background-color: gray;
+}
