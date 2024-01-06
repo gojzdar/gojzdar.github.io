@@ -104,7 +104,7 @@ export class Question {
 		let questionScore = scoringFunction(this.type, this.maxWorth, this.correctAnswers.length, this.decoyAnswers.length, answeredCorrectly, answeredWrongly);
 		questionBox.classList.remove("Unanswered", "Correct", "Wrong");
 
-		if(this.maxWorth === questionScore) {
+		if(this.maxWorth === questionScore) { 
 			questionBox.classList.add("Correct");
 		} else {
 			questionBox.classList.add("Wrong");

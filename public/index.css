@@ -28,6 +28,9 @@ body {
 .QuestionBox {
 	margin: 1em 0;
 }
+.QuestionBox > div {
+	padding: 10px;
+}
 
 .Question {
 	display: inline-block;
@@ -41,12 +44,40 @@ body {
 	display: inline-block;
 	margin-right: 1ch;
 	font-size: 1.35em;
+	font-weight: bold; 
+}
+
+div.Explanation:empty {
+	padding: 0;
+}
+
+div.Explanation:not(:empty) {
+	border-top: 2px solid white;
+	margin-top: 0.5em;
+	padding: 0.2em;
+	padding-top: 0.5em;
+
+	background-color: #1a1a1a;
+}
+
+div.Explanation:not(:empty)::before {
+	content: "Explanation: ";
 	font-weight: bold;
 }
 
+#submitAnswers {
+	width: 100%;
+	background-color: lightgray;
+	border-radius: 0;
+	border-width: 0;
+	color: black;
+	font-weight: bold;
+}
+
+
 label {
 	width: 100%;
-	display: block;
+	display: flex;
 
 }
 
